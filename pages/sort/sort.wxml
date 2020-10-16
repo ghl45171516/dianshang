@@ -1,0 +1,29 @@
+<view class="sort">
+  <!-- 搜索 -->
+  <my-serch class="serch"></my-serch>
+  <!-- 列表 -->
+  <view class="sort_list">
+    <!-- 左侧 -->
+    <scroll-view class="sort_l" scroll-y='true' style="height:{{height}}px">
+      <block wx:for="{{leftMenuList}}" wx:key="index">
+        <view class="sort_item" bindtap="dianji" data-index='{{index}}'>
+          <view bindtap="dianji" data-index='{{index}}' class="item {{li==index?'yanse':''}}">{{item}}</view>
+        </view>
+      </block>
+    </scroll-view>
+    <!-- 右侧 -->
+    <scroll-view class="sort_r" scroll-y='true' style="height:{{height}}px" scroll-top='{{num}}'>
+      <block wx:for="{{rightContent}}" wx:key="index">
+        <view class="title_top">/{{item.cat_name}}/</view>
+        <view class="title_bottom">
+          <block wx:for="{{item.children}}" wx:key="index">
+            <navigator class="details" url="/pages/goods_list/goods_list?id={{item.cat_id}}">
+              <image src='{{item.cat_icon}}'></image>
+              <view class="text">{{item.cat_name}}</view>
+            </navigator>
+          </block>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

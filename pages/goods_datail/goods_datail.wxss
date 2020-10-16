@@ -1,0 +1,119 @@
+/* pages/goods_datail/goods_datail.wxss */
+@import "/style/index.wxss";
+
+page {
+  background-color: #ddd;
+}
+
+.goods_swiper {
+  width: 100%;
+  background-color: white;
+  height: 560rpx;
+}
+
+.goods_swiper swiper-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.goods_swiper swiper-item image {
+  width: 70%;
+  height: 80%;
+}
+
+.goods_price {
+  color: #eb4450;
+  background-color: white;
+}
+
+.goods_conente {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  background-color: white;
+}
+
+.goods_conente_l {
+  width: 80%;
+  padding: 10rpx;
+}
+
+.goods_conente_r {
+  width: 20%;
+  height: 80%;
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid;
+}
+
+.goods_conente_l text {
+  font-size: 28rpx;
+  color: rgb(41, 39, 39);
+}
+
+.goods_conente_r view {
+  text-align: center;
+  font-size: 30rpx;
+  padding-bottom: 15rpx;
+}
+
+.xiangqing {
+  font-weight: 700;
+  margin: 10rpx 0;
+  padding: 10rpx;
+  color: #eb4450;
+  background-color: white;
+}
+
+/* 底部 */
+.btm_toollm {
+  border-top: 1px solid #CCC;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+
+.btm_toollm .tool_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 26rpx;
+  position: relative;
+}
+.btm_toollm .tool_item button{
+  position: absolute;
+  left: 0 ;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.btm_toollm .btn_cart {
+  flex: 2;
+  background-color: #ffa500;
+  font-weight: 600;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.btm_toollm .btn_buy {
+  flex: 2;
+  background-color: #eb4450;
+  font-weight: 600;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.rich_text {
+  margin-bottom: 90rpx;
+}

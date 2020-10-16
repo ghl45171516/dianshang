@@ -1,0 +1,7 @@
+/* pages/shopping/shopping.wxss */
+.address_btn{
+  padding: 20rpx;
+}
+.address_btn button{
+  width: 60%;
+}

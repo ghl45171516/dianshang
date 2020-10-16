@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "my-tabs":"/Component/my-tabs/my-tabs",
+    "mp-loading": "/miniprogram_npm/weui-miniprogram/loading/loading"
+  },
+  "navigationBarTitleText": "商品信息",
+  "backgroundTextStyle":"dark",
+  "enablePullDownRefresh":true
+}

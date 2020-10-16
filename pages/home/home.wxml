@@ -1,0 +1,35 @@
+<!--pages/home/home.wxml-->
+<view>
+  <my-serch></my-serch>
+  <swiper class="swiperBox" indicator-dots='true' indicator-color="rgba(0, 0, 0, .3)" indicator-active-color='#ffffff'
+    autoplay="true" interval='2000' circular='true'>
+    <block wx:for="{{swiperList}}" wx:key='index'>
+      <navigator>
+        <swiper-item class="swiperList">
+          <image src="{{item.image_src}}"></image>
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+  <view class="cateList">
+    <block wx:for="{{cateList}}" wx:key='index'>
+      <navigator class="cate">
+        <image src="{{item.image_src}}"></image>
+      </navigator>
+    </block>
+  </view>
+  <view class="index_floor">
+    <view wx:for="{{details}}" wx:key='index'>
+      <view class="floor_group">
+        <image src="{{item.floor_title.image_src}}"></image>
+      </view>
+      <view class="floor_list">
+        <block wx:for="{{item.product_list}}" wx:key='index'>
+          <navigator>
+            <image src="{{item.image_src}}"></image>
+          </navigator>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

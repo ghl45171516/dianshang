@@ -1,0 +1,7 @@
+
+  <!-- 头 -->
+  <view class="tab_list">
+    <block wx:for='{{tabs}}' wx:key="index">
+      <view class="tab {{li==index?'yanse':''}}" bindtap="bindtab" data-index="{{index}}">{{item.value}}</view>
+    </block>
+  </view>

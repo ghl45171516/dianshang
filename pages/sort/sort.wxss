@@ -1,0 +1,60 @@
+/* pages/sort/sort.wxss */
+.sort{
+  height: 100%;
+}
+.sort_list{
+  width: 100%;
+  display: flex;
+}
+.sort_l{
+  width: 30%;
+}
+.sort_r{
+  width: 70%;
+}
+.sort_item{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  font-size: 34rpx;
+  text-align: center;
+  height: 64rpx;
+  width: 100%;
+  line-height: 64rpx;
+}
+.yanse{
+  color: #eb4450;
+  border-left: 6rpx solid #eb4450;
+}
+.sort_r .title_top{
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  margin-top: 20rpx;
+}
+.title_bottom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start ;
+}
+.title_bottom .details{
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  padding: 20rpx;
+}
+.title_bottom .details image{
+  display: inline-block;
+  width: 100rpx;
+  height: 100rpx;
+}
+.title_bottom .details .text{
+  font-size: 30rpx;
+}
